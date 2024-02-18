@@ -15,6 +15,42 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
+class Swish(nn.Module):
+    def forward(self, x):
+        return x * torch.sigmoid(x)
+    
+class Expert(nn.Module):
+    def __init__(self, input_size, output_size, hidden_size):
+        super().__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.activation = nn.SELU()  
+        # self.activation = Swish()
+        self.fc2 = nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        return self.fc2(self.activation(self.fc1(x)))
+    
+class MixtureOfExperts(nn.Module):
+    def __init__(self, config, num_experts=15):
+        super().__init__()
+        self.num_experts = num_experts
+        self.experts = nn.ModuleList([Expert(config.n_embd, config.n_embd, config.n_embd * 4) for _ in range(num_experts)])
+        self.gate = nn.Linear(config.n_embd, num_experts)
+
+    def forward(self, x):
+        # Gate values determine the mixture of experts
+        gate_values = F.softmax(self.gate(x), dim=-1)  # Shape: (batch_size, seq_length, num_experts)
+        
+        # Apply each expert to the input and weight the outputs by the gate values
+        expert_outputs = torch.stack([expert(x) for expert in self.experts])  # Shape: (num_experts, batch_size, seq_length, n_embd)
+        expert_outputs = expert_outputs.permute(1, 2, 0, 3)  # Shape: (batch_size, seq_length, num_experts, n_embd)
+
+        # Combine expert outputs weighted by the gate values
+        weighted_expert_outputs = expert_outputs * gate_values.unsqueeze(-1)  # Shape: (batch_size, seq_length, num_experts, n_embd)
+        combined_output = weighted_expert_outputs.sum(dim=2)  # Shape: (batch_size, seq_length, n_embd)
+
+        return combined_output
+
 class LayerNorm(nn.Module):
     """ LayerNorm but with an optional bias. PyTorch doesn't support simply bias=False """
 
@@ -98,11 +134,12 @@ class Block(nn.Module):
         self.ln_1 = LayerNorm(config.n_embd, bias=config.bias)
         self.attn = CausalSelfAttention(config)
         self.ln_2 = LayerNorm(config.n_embd, bias=config.bias)
-        self.mlp = MLP(config)
+        # self.mlp = MLP(config)
+        self.moe = MixtureOfExperts(config)
 
     def forward(self, x):
         x = x + self.attn(self.ln_1(x))
-        x = x + self.mlp(self.ln_2(x))
+        x = x + self.moe(self.ln_2(x))
         return x
 
 @dataclass

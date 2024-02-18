@@ -1,0 +1,57 @@
+[2024-02-15 02:38:26,791] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_6
+[2024-02-15 02:38:26,793] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_7
+[2024-02-15 02:38:26,795] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_8
+[2024-02-15 02:38:26,796] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_9
+[2024-02-15 02:38:26,798] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_10
+[2024-02-15 02:38:26,799] [0/0] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_11
+step 0: train loss 12.5633 BPC, val loss 12.5691 BPC
+[2024-02-15 02:41:52,204] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_6
+[2024-02-15 02:41:52,207] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_7
+[2024-02-15 02:41:52,208] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_8
+[2024-02-15 02:41:52,209] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_9
+[2024-02-15 02:41:52,211] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_10
+[2024-02-15 02:41:52,212] [0/1] torch._inductor.fx_passes.split_cat: [WARNING] example value absent for node: stack_11
+Traceback (most recent call last):
+  File "/root/Jack/nano-gpt/train.py", line 299, in <module>
+    logits, loss = model(X, Y)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/Jack/nano-gpt/model.py", line 207, in forward
+    def forward(self, idx, targets=None):
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 901, in forward
+    return compiled_fn(full_args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 81, in g
+    return f(*args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 83, in runtime_wrapper
+    all_outs = call_func_at_runtime_with_args(
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 105, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 81, in g
+    return f(*args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 408, in forward
+    fw_outs = call_func_at_runtime_with_args(
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 105, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 864, in __call__
+    return self.get_current_callable()(inputs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/compile_fx.py", line 611, in run
+    return model(new_inputs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 892, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_root/hg/chgi62tryjvmb3i7wscdx4oc3h3giabu3bius2jcn6bv5wg6r35i.py", line 3192, in call
+    buf324 = empty((1280, 256, 1536), device='cuda', dtype=torch.float16)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 960.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 824.50 MiB is free. Process 592595 has 5.84 GiB memory in use. Process 594201 has 4.10 GiB memory in use. Of the allocated memory 5.07 GiB is allocated by PyTorch, and 8.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

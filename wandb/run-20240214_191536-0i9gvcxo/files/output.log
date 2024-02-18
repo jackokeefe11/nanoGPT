@@ -1,0 +1,114 @@
+
+step 0: train loss 6.1854 BPC, val loss 4.2823 BPC
+iter 0: loss 6.1551 BPC, time 65821.64ms, mfu -100.00%
+iter 10: loss 4.6810 BPC, time 50.98ms, mfu 7.31%
+iter 20: loss 4.0271 BPC, time 51.52ms, mfu 7.30%
+iter 30: loss 3.8057 BPC, time 52.06ms, mfu 7.29%
+iter 40: loss 3.7156 BPC, time 52.69ms, mfu 7.27%
+iter 50: loss 3.6449 BPC, time 50.63ms, mfu 7.28%
+iter 60: loss 3.6261 BPC, time 51.91ms, mfu 7.27%
+iter 70: loss 3.5985 BPC, time 51.74ms, mfu 7.26%
+iter 80: loss 3.6031 BPC, time 51.72ms, mfu 7.25%
+iter 90: loss 3.5628 BPC, time 52.03ms, mfu 7.24%
+iter 100: loss 3.5523 BPC, time 52.22ms, mfu 7.23%
+iter 110: loss 3.5406 BPC, time 53.61ms, mfu 7.21%
+iter 120: loss 3.4966 BPC, time 51.82ms, mfu 7.20%
+iter 130: loss 3.4888 BPC, time 52.10ms, mfu 7.20%
+iter 140: loss 3.4638 BPC, time 52.35ms, mfu 7.19%
+iter 150: loss 3.4822 BPC, time 52.06ms, mfu 7.19%
+iter 160: loss 3.4194 BPC, time 52.17ms, mfu 7.18%
+iter 170: loss 3.4108 BPC, time 51.55ms, mfu 7.19%
+iter 180: loss 3.3419 BPC, time 52.34ms, mfu 7.18%
+iter 190: loss 3.2769 BPC, time 52.24ms, mfu 7.18%
+iter 200: loss 3.2056 BPC, time 52.29ms, mfu 7.17%
+iter 210: loss 3.0997 BPC, time 48.20ms, mfu 7.23%
+iter 220: loss 3.0881 BPC, time 51.98ms, mfu 7.22%
+iter 230: loss 3.0027 BPC, time 52.32ms, mfu 7.21%
+iter 240: loss 2.9956 BPC, time 51.73ms, mfu 7.21%
+step 250: train loss 2.8416 BPC, val loss 2.0681 BPC
+saving checkpoint to out-shakespeare-char
+iter 250: loss 2.9416 BPC, time 7773.98ms, mfu 6.49%
+iter 260: loss 2.8461 BPC, time 52.52ms, mfu 6.55%
+iter 270: loss 2.8564 BPC, time 52.29ms, mfu 6.61%
+iter 280: loss 2.8534 BPC, time 52.00ms, mfu 6.67%
+iter 290: loss 2.7729 BPC, time 52.58ms, mfu 6.71%
+iter 300: loss 2.7389 BPC, time 52.47ms, mfu 6.75%
+iter 310: loss 2.7108 BPC, time 49.48ms, mfu 6.83%
+iter 320: loss 2.6752 BPC, time 52.43ms, mfu 6.85%
+iter 330: loss 2.6275 BPC, time 52.21ms, mfu 6.88%
+iter 340: loss 2.5687 BPC, time 52.48ms, mfu 6.90%
+iter 350: loss 2.6486 BPC, time 52.06ms, mfu 6.93%
+iter 360: loss 2.5562 BPC, time 53.22ms, mfu 6.94%
+iter 370: loss 2.5248 BPC, time 52.77ms, mfu 6.95%
+iter 380: loss 2.4921 BPC, time 52.59ms, mfu 6.96%
+iter 390: loss 2.5072 BPC, time 52.98ms, mfu 6.97%
+iter 400: loss 2.5531 BPC, time 52.51ms, mfu 6.98%
+iter 410: loss 2.4371 BPC, time 52.39ms, mfu 7.00%
+iter 420: loss 2.4734 BPC, time 53.05ms, mfu 7.00%
+iter 430: loss 2.4328 BPC, time 53.29ms, mfu 7.00%
+iter 440: loss 2.3857 BPC, time 53.56ms, mfu 6.99%
+iter 450: loss 2.3820 BPC, time 52.82ms, mfu 7.00%
+iter 460: loss 2.2985 BPC, time 60.64ms, mfu 6.91%
+iter 470: loss 2.3906 BPC, time 53.86ms, mfu 6.91%
+iter 480: loss 2.3361 BPC, time 53.11ms, mfu 6.92%
+iter 490: loss 2.2993 BPC, time 53.43ms, mfu 6.93%
+step 500: train loss 2.1997 BPC, val loss 1.7304 BPC
+saving checkpoint to out-shakespeare-char
+iter 500: loss 2.3005 BPC, time 7683.43ms, mfu 6.24%
+iter 510: loss 2.3220 BPC, time 54.23ms, mfu 6.30%
+iter 520: loss 2.2835 BPC, time 54.50ms, mfu 6.36%
+iter 530: loss 2.2481 BPC, time 54.95ms, mfu 6.40%
+iter 540: loss 2.3310 BPC, time 54.00ms, mfu 6.45%
+iter 550: loss 2.2628 BPC, time 54.12ms, mfu 6.49%
+iter 560: loss 2.2642 BPC, time 54.24ms, mfu 6.53%
+iter 570: loss 2.2599 BPC, time 54.47ms, mfu 6.56%
+iter 580: loss 2.2231 BPC, time 54.72ms, mfu 6.59%
+iter 590: loss 2.1642 BPC, time 60.24ms, mfu 6.55%
+iter 600: loss 2.1872 BPC, time 54.74ms, mfu 6.57%
+iter 610: loss 2.2272 BPC, time 54.82ms, mfu 6.60%
+iter 620: loss 2.2002 BPC, time 53.32ms, mfu 6.63%
+iter 630: loss 2.1705 BPC, time 55.64ms, mfu 6.64%
+iter 640: loss 2.1054 BPC, time 52.92ms, mfu 6.68%
+iter 650: loss 2.1700 BPC, time 54.89ms, mfu 6.69%
+iter 660: loss 2.1674 BPC, time 56.10ms, mfu 6.69%
+iter 670: loss 2.0808 BPC, time 55.01ms, mfu 6.70%
+iter 680: loss 2.1794 BPC, time 56.21ms, mfu 6.69%
+iter 690: loss 2.1003 BPC, time 53.85ms, mfu 6.71%
+iter 700: loss 2.1298 BPC, time 56.00ms, mfu 6.71%
+iter 710: loss 2.1016 BPC, time 56.01ms, mfu 6.70%
+iter 720: loss 2.0895 BPC, time 56.80ms, mfu 6.69%
+iter 730: loss 2.0510 BPC, time 56.66ms, mfu 6.68%
+iter 740: loss 2.0660 BPC, time 57.19ms, mfu 6.66%
+step 750: train loss 1.9580 BPC, val loss 1.5853 BPC
+saving checkpoint to out-shakespeare-char
+iter 750: loss 2.0494 BPC, time 7886.49ms, mfu 6.00%
+iter 760: loss 2.0775 BPC, time 57.88ms, mfu 6.04%
+iter 770: loss 2.0540 BPC, time 57.85ms, mfu 6.08%
+iter 780: loss 2.0422 BPC, time 57.20ms, mfu 6.13%
+iter 790: loss 2.0455 BPC, time 57.46ms, mfu 6.16%
+iter 800: loss 2.0612 BPC, time 57.89ms, mfu 6.19%
+iter 810: loss 2.0179 BPC, time 59.04ms, mfu 6.20%
+iter 820: loss 2.0355 BPC, time 57.84ms, mfu 6.23%
+iter 830: loss 2.0046 BPC, time 56.97ms, mfu 6.26%
+iter 840: loss 2.0076 BPC, time 58.89ms, mfu 6.26%
+iter 850: loss 1.9955 BPC, time 57.21ms, mfu 6.29%
+iter 860: loss 2.0150 BPC, time 66.55ms, mfu 6.22%
+iter 870: loss 2.0112 BPC, time 59.32ms, mfu 6.23%
+iter 880: loss 1.9907 BPC, time 58.35ms, mfu 6.24%
+iter 890: loss 2.0036 BPC, time 56.97ms, mfu 6.27%
+iter 900: loss 1.9767 BPC, time 58.90ms, mfu 6.28%
+iter 910: loss 1.9021 BPC, time 59.55ms, mfu 6.28%
+iter 920: loss 1.9628 BPC, time 57.57ms, mfu 6.30%
+iter 930: loss 1.9561 BPC, time 62.36ms, mfu 6.26%
+iter 940: loss 1.9312 BPC, time 59.48ms, mfu 6.26%
+iter 950: loss 1.9420 BPC, time 66.93ms, mfu 6.19%
+iter 960: loss 1.9558 BPC, time 59.84ms, mfu 6.20%
+iter 970: loss 1.9559 BPC, time 57.52ms, mfu 6.23%
+Traceback (most recent call last):
+  File "/root/Jack/nano-gpt/train.py", line 304, in <module>
+    scaler.scale(loss).backward()
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,38 @@
+2024-02-14 19:09:09,272 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Configure stats pid to 112459
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Loading settings from /root/Jack/nano-gpt/wandb/settings
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/root/Jack/nano-gpt/train.py', 'program': '/root/Jack/nano-gpt/train.py'}
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:_log_setup():526] Logging user logs to /root/Jack/nano-gpt/wandb/run-20240214_190909-ilvpsbbn/logs/debug.log
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:_log_setup():527] Logging internal logs to /root/Jack/nano-gpt/wandb/run-20240214_190909-ilvpsbbn/logs/debug-internal.log
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:init():566] calling init triggers
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out-shakespeare-char', 'eval_interval': 250, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'shakespeare-char', 'wandb_run_name': 'mini-gpt', 'dataset': 'shakespeare_char', 'gradient_accumulation_steps': 1, 'batch_size': 64, 'block_size': 256, 'n_layer': 6, 'n_head': 6, 'n_embd': 384, 'dropout': 0.2, 'bias': False, 'learning_rate': 0.001, 'max_iters': 5000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 5000, 'min_lr': 0.0001, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'float16', 'compile': True}
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:init():616] starting backend
+2024-02-14 19:09:09,273 INFO    MainThread:112459 [wandb_init.py:init():620] setting up manager
+2024-02-14 19:09:09,276 INFO    MainThread:112459 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-02-14 19:09:09,277 INFO    MainThread:112459 [wandb_init.py:init():628] backend started and connected
+2024-02-14 19:09:09,284 INFO    MainThread:112459 [wandb_init.py:init():720] updated telemetry
+2024-02-14 19:09:09,285 INFO    MainThread:112459 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-14 19:09:09,596 INFO    MainThread:112459 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-14 19:09:09,711 INFO    MainThread:112459 [wandb_run.py:_on_init():2271] got version response 
+2024-02-14 19:09:09,711 INFO    MainThread:112459 [wandb_init.py:init():804] starting run threads in backend
+2024-02-14 19:09:11,416 WARNING MainThread:112459 [wandb_init.py:init():1198] interrupted
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 817, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

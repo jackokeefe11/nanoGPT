@@ -1,0 +1,46 @@
+
+step 0: train loss 12.6583 BPC, val loss 12.6604 BPC
+Traceback (most recent call last):
+  File "/root/Jack/nano-gpt/train.py", line 299, in <module>
+    logits, loss = model(X, Y)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/Jack/nano-gpt/model.py", line 207, in forward
+    def forward(self, idx, targets=None):
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 901, in forward
+    return compiled_fn(full_args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 81, in g
+    return f(*args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 83, in runtime_wrapper
+    all_outs = call_func_at_runtime_with_args(
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 105, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 81, in g
+    return f(*args)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 408, in forward
+    fw_outs = call_func_at_runtime_with_args(
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 105, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 864, in __call__
+    return self.get_current_callable()(inputs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/compile_fx.py", line 611, in run
+    return model(new_inputs)
+  File "/root/anaconda3/envs/nano-gpt/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 892, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_root/yn/cynndmk4w5tkzkjvmpb3gadl7modhjsfwuupdgtuf7tk3zgyiutz.py", line 4003, in call
+    buf780 = empty((64, 256, 384), device='cuda', dtype=torch.bool)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 10.50 MiB is free. Process 940654 has 10.74 GiB memory in use. Of the allocated memory 9.97 GiB is allocated by PyTorch, and 1.61 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

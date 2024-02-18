@@ -1,0 +1,294 @@
+2024-02-15 02:45:34,610 INFO    StreamThr :265057 [internal.py:wandb_internal():86] W&B internal server running at pid: 265057, started at: 2024-02-15 02:45:34.610017
+2024-02-15 02:45:34,612 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status
+2024-02-15 02:45:34,615 INFO    WriterThread:265057 [datastore.py:open_for_write():87] open: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/run-7y698k9k.wandb
+2024-02-15 02:45:34,616 DEBUG   SenderThread:265057 [sender.py:send():382] send: header
+2024-02-15 02:45:34,617 DEBUG   SenderThread:265057 [sender.py:send():382] send: run
+2024-02-15 02:45:34,890 INFO    SenderThread:265057 [dir_watcher.py:__init__():211] watching files in: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files
+2024-02-15 02:45:34,890 INFO    SenderThread:265057 [sender.py:_start_run_threads():1136] run started: 7y698k9k with start time 1707965134.609949
+2024-02-15 02:45:34,909 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: check_version
+2024-02-15 02:45:34,909 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: check_version
+2024-02-15 02:45:35,040 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: run_start
+2024-02-15 02:45:35,052 DEBUG   HandlerThread:265057 [system_info.py:__init__():27] System info init
+2024-02-15 02:45:35,052 DEBUG   HandlerThread:265057 [system_info.py:__init__():42] System info init done
+2024-02-15 02:45:35,052 INFO    HandlerThread:265057 [system_monitor.py:start():194] Starting system monitor
+2024-02-15 02:45:35,052 INFO    SystemMonitor:265057 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-15 02:45:35,053 INFO    HandlerThread:265057 [system_monitor.py:probe():214] Collecting system info
+2024-02-15 02:45:35,053 INFO    SystemMonitor:265057 [interfaces.py:start():190] Started cpu monitoring
+2024-02-15 02:45:35,054 INFO    SystemMonitor:265057 [interfaces.py:start():190] Started disk monitoring
+2024-02-15 02:45:35,055 INFO    SystemMonitor:265057 [interfaces.py:start():190] Started gpu monitoring
+2024-02-15 02:45:35,056 INFO    SystemMonitor:265057 [interfaces.py:start():190] Started memory monitoring
+2024-02-15 02:45:35,057 INFO    SystemMonitor:265057 [interfaces.py:start():190] Started network monitoring
+2024-02-15 02:45:35,135 DEBUG   HandlerThread:265057 [system_info.py:probe():151] Probing system
+2024-02-15 02:45:35,143 DEBUG   HandlerThread:265057 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-15 02:45:35,143 DEBUG   HandlerThread:265057 [system_info.py:probe():199] Probing system done
+2024-02-15 02:45:35,143 DEBUG   HandlerThread:265057 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-78-generic-x86_64-with-glibc2.35', 'python': '3.9.18', 'heartbeatAt': '2024-02-15T02:45:35.135568', 'startedAt': '2024-02-15T02:45:34.603441', 'docker': None, 'cuda': None, 'args': ('config/train_enwik_char.py',), 'state': 'running', 'program': '/root/Jack/nano-gpt/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'f3bf117ab786', 'username': 'root', 'executable': '/root/anaconda3/envs/nano-gpt/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 1504.9235312499998, 'min': 1200.0, 'max': 2700.0}, 'cpu_freq_per_core': [{'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1300.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1800.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2699.999, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 2699.999, 'min': 1200.0, 'max': 2700.0}, {'current': 2700.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}, {'current': 1200.0, 'min': 1200.0, 'max': 2700.0}], 'disk': {'/': {'total': 232.1996078491211, 'used': 87.95015335083008}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 1006.5306816101074}}
+2024-02-15 02:45:35,144 INFO    HandlerThread:265057 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-15 02:45:35,144 INFO    HandlerThread:265057 [system_monitor.py:probe():227] Publishing system info
+2024-02-15 02:45:35,144 DEBUG   HandlerThread:265057 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-15 02:45:35,894 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/conda-environment.yaml
+2024-02-15 02:45:41,615 DEBUG   HandlerThread:265057 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-15 02:45:41,617 INFO    HandlerThread:265057 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-15 02:45:41,620 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:45:41,620 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 02:45:41,621 DEBUG   SenderThread:265057 [sender.py:send():382] send: files
+2024-02-15 02:45:41,621 INFO    SenderThread:265057 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-15 02:45:41,629 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-15 02:45:41,630 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: python_packages
+2024-02-15 02:45:41,630 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:45:41,630 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:45:41,631 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:45:41,843 DEBUG   SenderThread:265057 [sender.py:send():382] send: telemetry
+2024-02-15 02:45:41,892 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/conda-environment.yaml
+2024-02-15 02:45:41,893 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/requirements.txt
+2024-02-15 02:45:41,893 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-metadata.json
+2024-02-15 02:45:41,949 INFO    wandb-upload_0:265057 [upload_job.py:push():131] Uploaded file /tmp/tmp_e4tao_nwandb/bd9bljnp-wandb-metadata.json
+2024-02-15 02:45:45,843 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:45:50,844 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:45:55,845 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:45:56,634 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:45:56,635 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:45:56,635 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:46:01,683 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:06,693 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:06,899 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/config.yaml
+2024-02-15 02:46:11,637 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:46:11,637 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:46:11,640 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:46:12,685 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:17,685 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:22,686 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:26,637 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:46:26,639 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:46:26,639 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:46:27,693 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:32,694 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:35,057 DEBUG   SystemMonitor:265057 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-15 02:46:35,062 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:46:38,063 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:41,635 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:46:41,635 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:46:41,638 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:46:43,726 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:48,726 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:53,727 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:46:56,634 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:46:56,634 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:46:56,679 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:46:59,685 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:04,686 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:05,065 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:47:10,067 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:11,634 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:47:11,634 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:47:11,675 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:47:15,679 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:20,679 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:25,680 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:26,634 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:47:26,634 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:47:26,675 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:47:30,736 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:35,068 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:47:36,069 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:41,070 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:41,634 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:47:41,635 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:47:41,679 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:47:46,741 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:51,741 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:55,929 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/output.log
+2024-02-15 02:47:56,625 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-15 02:47:56,627 DEBUG   SenderThread:265057 [sender.py:send():382] send: history
+2024-02-15 02:47:56,627 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: summary_record
+2024-02-15 02:47:56,630 INFO    SenderThread:265057 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-15 02:47:56,644 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:47:56,645 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:47:56,645 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:47:56,752 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:47:56,929 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-summary.json
+2024-02-15 02:47:57,929 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/output.log
+2024-02-15 02:48:01,753 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:05,071 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:48:07,072 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:11,643 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:48:11,645 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:48:11,645 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:48:12,767 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:17,768 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:22,769 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:26,646 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:48:26,648 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:48:26,648 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:48:28,734 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:33,734 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:35,074 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:48:39,075 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:41,646 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:48:41,647 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:48:41,648 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:48:44,775 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:49,775 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:54,776 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:48:56,697 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:48:56,707 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:48:56,707 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:49:00,748 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:05,077 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:49:06,078 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:11,079 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:11,659 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:49:11,659 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:49:11,704 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:49:16,705 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:21,705 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:26,698 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:49:26,704 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:49:26,704 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:49:26,779 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:31,780 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:35,080 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:49:37,081 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:41,669 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:49:41,679 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-15 02:49:41,679 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: stop_status
+2024-02-15 02:49:42,805 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:47,423 DEBUG   SenderThread:265057 [sender.py:send():382] send: exit
+2024-02-15 02:49:47,424 INFO    SenderThread:265057 [sender.py:send_exit():589] handling exit code: 1
+2024-02-15 02:49:47,424 INFO    SenderThread:265057 [sender.py:send_exit():591] handling runtime: 252
+2024-02-15 02:49:47,426 INFO    SenderThread:265057 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-15 02:49:47,427 INFO    SenderThread:265057 [sender.py:send_exit():597] send defer
+2024-02-15 02:49:47,427 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,427 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-15 02:49:47,427 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,428 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-15 02:49:47,428 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 1
+2024-02-15 02:49:47,428 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,428 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-15 02:49:47,428 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,428 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-15 02:49:47,428 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 2
+2024-02-15 02:49:47,428 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,429 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-15 02:49:47,429 INFO    HandlerThread:265057 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-15 02:49:47,429 DEBUG   SystemMonitor:265057 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-15 02:49:47,430 DEBUG   SystemMonitor:265057 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-15 02:49:47,433 INFO    HandlerThread:265057 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-15 02:49:47,433 INFO    HandlerThread:265057 [interfaces.py:finish():202] Joined disk monitor
+2024-02-15 02:49:47,482 INFO    HandlerThread:265057 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-15 02:49:47,483 INFO    HandlerThread:265057 [interfaces.py:finish():202] Joined memory monitor
+2024-02-15 02:49:47,483 INFO    HandlerThread:265057 [interfaces.py:finish():202] Joined network monitor
+2024-02-15 02:49:47,483 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,484 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-15 02:49:47,484 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 3
+2024-02-15 02:49:47,484 DEBUG   SenderThread:265057 [sender.py:send():382] send: stats
+2024-02-15 02:49:47,485 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,485 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-15 02:49:47,485 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,486 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-15 02:49:47,486 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 4
+2024-02-15 02:49:47,486 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,486 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-15 02:49:47,486 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,486 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-15 02:49:47,486 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 5
+2024-02-15 02:49:47,486 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,486 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-15 02:49:47,487 DEBUG   SenderThread:265057 [sender.py:send():382] send: summary
+2024-02-15 02:49:47,487 INFO    SenderThread:265057 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-15 02:49:47,488 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,488 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-15 02:49:47,488 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 6
+2024-02-15 02:49:47,488 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,488 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-15 02:49:47,488 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,488 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-15 02:49:47,488 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 7
+2024-02-15 02:49:47,489 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 02:49:47,489 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:47,489 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-15 02:49:47,489 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:47,489 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-15 02:49:47,962 INFO    Thread-12 :265057 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-summary.json
+2024-02-15 02:49:48,423 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-15 02:49:49,289 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 8
+2024-02-15 02:49:49,289 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: poll_exit
+2024-02-15 02:49:49,289 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:49,290 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-15 02:49:49,290 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:49,290 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-15 02:49:49,290 INFO    SenderThread:265057 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-15 02:49:49,291 INFO    SenderThread:265057 [job_builder.py:_get_source_type():437] no source found
+2024-02-15 02:49:49,291 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 9
+2024-02-15 02:49:49,292 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:49,292 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-15 02:49:49,292 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:49,292 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-15 02:49:49,292 INFO    SenderThread:265057 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-15 02:49:49,424 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-15 02:49:49,963 INFO    SenderThread:265057 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/output.log
+2024-02-15 02:49:49,963 INFO    SenderThread:265057 [dir_watcher.py:finish():388] scan: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files
+2024-02-15 02:49:49,963 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/config.yaml config.yaml
+2024-02-15 02:49:49,963 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/conda-environment.yaml conda-environment.yaml
+2024-02-15 02:49:49,968 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-metadata.json wandb-metadata.json
+2024-02-15 02:49:49,968 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/requirements.txt requirements.txt
+2024-02-15 02:49:49,968 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/output.log output.log
+2024-02-15 02:49:49,976 INFO    SenderThread:265057 [dir_watcher.py:finish():402] scan save: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-summary.json wandb-summary.json
+2024-02-15 02:49:49,980 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 10
+2024-02-15 02:49:49,981 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: poll_exit
+2024-02-15 02:49:49,981 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:49,981 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-15 02:49:49,985 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:49,985 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-15 02:49:49,986 INFO    SenderThread:265057 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-15 02:49:50,361 INFO    wandb-upload_0:265057 [upload_job.py:push():131] Uploaded file /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/config.yaml
+2024-02-15 02:49:50,366 INFO    wandb-upload_1:265057 [upload_job.py:push():131] Uploaded file /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/conda-environment.yaml
+2024-02-15 02:49:50,425 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-15 02:49:50,426 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: poll_exit
+2024-02-15 02:49:50,483 INFO    wandb-upload_3:265057 [upload_job.py:push():131] Uploaded file /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/output.log
+2024-02-15 02:49:50,505 INFO    wandb-upload_4:265057 [upload_job.py:push():131] Uploaded file /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/wandb-summary.json
+2024-02-15 02:49:50,518 INFO    wandb-upload_2:265057 [upload_job.py:push():131] Uploaded file /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/files/requirements.txt
+2024-02-15 02:49:50,719 INFO    Thread-11 :265057 [sender.py:transition_state():617] send defer: 11
+2024-02-15 02:49:50,719 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:50,719 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-15 02:49:50,720 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:50,720 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-15 02:49:50,720 INFO    SenderThread:265057 [file_pusher.py:join():178] waiting for file pusher
+2024-02-15 02:49:50,720 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 12
+2024-02-15 02:49:50,720 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:50,720 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-15 02:49:50,720 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:50,721 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-15 02:49:50,721 INFO    SenderThread:265057 [file_stream.py:finish():595] file stream finish called
+2024-02-15 02:49:50,842 INFO    SenderThread:265057 [file_stream.py:finish():599] file stream finish is done
+2024-02-15 02:49:50,842 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 13
+2024-02-15 02:49:50,842 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:50,842 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-15 02:49:50,842 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:50,842 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-15 02:49:50,843 INFO    SenderThread:265057 [sender.py:transition_state():617] send defer: 14
+2024-02-15 02:49:50,843 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: defer
+2024-02-15 02:49:50,843 INFO    HandlerThread:265057 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-15 02:49:50,843 DEBUG   SenderThread:265057 [sender.py:send():382] send: final
+2024-02-15 02:49:50,843 DEBUG   SenderThread:265057 [sender.py:send():382] send: footer
+2024-02-15 02:49:50,844 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: defer
+2024-02-15 02:49:50,844 INFO    SenderThread:265057 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-15 02:49:50,844 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-15 02:49:50,845 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: poll_exit
+2024-02-15 02:49:50,845 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-15 02:49:50,846 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: poll_exit
+2024-02-15 02:49:50,846 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: server_info
+2024-02-15 02:49:50,846 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-15 02:49:50,847 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: server_info
+2024-02-15 02:49:50,848 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-15 02:49:50,852 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-15 02:49:50,853 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: job_info
+2024-02-15 02:49:50,883 DEBUG   SenderThread:265057 [sender.py:send_request():409] send_request: job_info
+2024-02-15 02:49:50,883 INFO    MainThread:265057 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-02-15 02:49:50,884 INFO    MainThread:265057 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-02-15 02:49:50,884 INFO    MainThread:265057 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-02-15 02:49:50,884 DEBUG   HandlerThread:265057 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-15 02:49:50,884 INFO    HandlerThread:265057 [handler.py:finish():869] shutting down handler
+2024-02-15 02:49:51,853 INFO    WriterThread:265057 [datastore.py:close():296] close: /root/Jack/nano-gpt/wandb/run-20240215_024534-7y698k9k/run-7y698k9k.wandb
+2024-02-15 02:49:51,883 INFO    SenderThread:265057 [sender.py:finish():1572] shutting down sender
+2024-02-15 02:49:51,883 INFO    SenderThread:265057 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-15 02:49:51,883 INFO    SenderThread:265057 [file_pusher.py:join():178] waiting for file pusher
