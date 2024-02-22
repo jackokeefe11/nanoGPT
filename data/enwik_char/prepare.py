@@ -8,13 +8,11 @@ if not os.path.exists('data/enwik_char/enwik8.zip'):
     print("enwik8.zip file not found.")
     sys.exit()
 
-# Check if processed files already exist
 if os.path.exists('data/enwik_char/train.bin') and os.path.exists('data/enwik_char/valid.bin') and os.path.exists('data/enwik_char/test.bin'):
     print('Processed files already exist - skipping processing')
     sys.exit()
 
 with zipfile.ZipFile('data/enwik_char/enwik8.zip') as zf:
-    # Assume the file inside is named 'enwik8', replace if it's different
     data_bytes = zf.read('enwik8')
     data = data_bytes.decode('utf-8')  # Decode the bytes to a string
 
@@ -56,7 +54,7 @@ train_ids.tofile(os.path.join(os.path.dirname(__file__), 'train.bin'))
 val_ids.tofile(os.path.join(os.path.dirname(__file__), 'val.bin'))
 test_ids.tofile(os.path.join(os.path.dirname(__file__), 'test.bin'))
 
-# save the meta information as well, to help us encode/decode later
+
 meta = {
     'vocab_size': vocab_size,
     'itos': itos,
@@ -64,3 +62,6 @@ meta = {
 }
 with open(os.path.join(os.path.dirname(__file__), 'meta.pkl'), 'wb') as f:
     pickle.dump(meta, f)
+
+
+
